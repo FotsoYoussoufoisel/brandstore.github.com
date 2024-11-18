@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+:root{
+    --main-color:#0e28ea;
+    --text-color: #020202;
+    --bg-color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+.section {
+  margin-top: 50px;
+
+  }
+body {
+    position: relative;
+ }
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+   } 
+header {
+    display: flex; 
+    align-items: center;
+    justify-content:space-between ;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    background-color: rgb(42, 46, 43);
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.2);
+    z-index: 10;
+   }
+   header.shadow{
+    background:  rgb(42, 46, 43);
+    box-shadow: 4PX 4px 20px rgb(15, 54, 55 / 10%);
+    transition: 0,5s ease;
+   }
+.menu {
+    display: flex;
+   }
+.logo{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+.menu  li {
+    margin: 0 15px;
+    list-style: none;
+    
+   }
+.menu  li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: white;
+    position: relative;
+   }
+.menu  li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;  
+    height: 2px;
+    border-radius: 6px;
+    background-color:#f1da06 ;
+    transition: 0,5s;
+   }
+.menu  li a:hover::before{
+    width: 100%;
+} 
+.menu  li a::after { 
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color:#f1da06;
+    transition: 0,5s;
+   }
+.menu  li a:hover::after{
+    width: 100%;
+   }
+.menu  li a:hover{
+    color: #000;
+   }
+.dropdown-menu {
+    display: none;
+    align-items: center;
+   
+ }
+ .menu  li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color:  rgb(42, 46, 43);
+ }
+.menu  li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+ }
+.menu  li:hover .dropdown-menu ul li {
+  width: 100px;
+  padding: 5px;
+   }
+
+.magnifying-glass{
+    font-size: 20px;
+    cursor: pointer;
+}
+.magnifying-glass-box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    border: 1px solid var(--main-color);
+    border-radius: 0,5rem;
+    clip-path: circle(0% at 100% 0%);
+}   
+.magnifying-glass-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0,4s;
+}
+.magnifying-glass-box input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+.Propos{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+.Propos-text{
+    font-family: Arial, sans-serif;
+   
+}
+
+.Propos-text h2{
+     font-size: 25px;
+     background: #fff;
+
+}
+
+
+.footer{
+    background: grey;
+    color: #f6f6f6;
+    border-top: 3px solid;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem;
+}
+.footer-container .logo{
+    color: var(--bg-color);
+margin-bottom: 1rem;
+}
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social a{
+    font-size: 24px;
+    color: var(--bg-color);
+    margin-right: 0,5rem;
+
+}
+.social a:hover{
+color: #000;
+}
+.footer-box h3 {
+ font-size: 1.1rem;
+ font-weight: 400;
+ margin-bottom: 1rem;
+ color: white;
+}    
+.footer-box a ,
+.footer-box p   {
+margin-bottom: 10px;
+}
+.footer-box a:hover{
+color: red;
+
+}
+.copyright{
+padding: 20px;
+text-align: center;
+color:var(--bg-color) ;
+background-color:grey;
+}
+@media  (max-width:1080px ) {
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+}
+@media  (max-width:991px){
+.menu{
+    padding: 15px 20px;
+}
+.section{
+    padding: 3rem 0 1rem;
+}
+.home-text{
+    padding-left: 2rem;
+}
+.home-text h1{
+    font-size: 2.1rem;
+}
+}
+@media  (max-width:920px){
+ #magnifying-glass{
+    color: var(--bg-color);
+ }
+}
+@media  (max-width:768px){
+#magnifying-glass-box input{
+          padding: 20px; ;
+}
+}
+
+

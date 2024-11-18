@@ -1,0 +1,28 @@
+<section class="contact" id="contact">
+    <div class="contat">
+    <h3>Contactez-Nous</h3>
+  <p style="font-size: 15px;">Chez Belcasane nous savons que avoir un téléphone est une aventure humaine mais également un engagement financier important pour vous.
+    c'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos actions pour aider dans l'achat de votre téléphone. </p>  
+  <form action="#" method="POST">
+  <label for="nom">Nom</label>  
+  <input type="text" id="nom" placeholder="votre Nom"> 
+  <label for="Prénom">Prénom</label>  
+  <input type="text" id="Prénom" placeholder="votre Prénom"> 
+  <label for="ville">ville</label>  
+  <input type="text" id="ville" placeholder="votre ville">  
+  <label for="téléphone">téléphone</label> 
+  <input type="text" id="téléphone" placeholder="votre téléphone">
+  <label for="E-mail">E-mail</label> 
+  <input type="text" id="E-mail" placeholder="votre E-mail">   
+
+  <input type="submit" value="Envoyer" class="button">   
+ 
+  </form>    
+    </div>  
+    </section>
+    <br>
+
+
+
+    <br>
+    
